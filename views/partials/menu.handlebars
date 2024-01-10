@@ -1,0 +1,19 @@
+<div id="topbarBackground">
+  <a href="/about" class="topBarElement responsive-hide" {{#if isMenuAbout}} id="selectedTopBar" {{/if}}>About Me</a>
+  <a href="/programs" class="topBarElement responsive-hide" {{#if isMenuEdu}} id="selectedTopBar" {{/if}}>Education</a>
+  <a href="/experience" class="topBarElement responsive-hide" {{#if isMenuCV}} id="selectedTopBar" {{/if}}>CV</a>
+  <a href="/skills-coding" class="topBarElement responsive-hide" {{#if isMenuSki}} id="selectedTopBar" {{/if}}>Skills</a>
+  <a href="/projects-coding" class="topBarElement responsive-hide" {{#if isMenuPro}} id="selectedTopBar" {{/if}}>Projects</a>
+
+{{#if arrowHide}}
+{{else}}
+  <a href="/" class="topBarElement" id="responsive-only"><img
+    src="/img/arrow-back.png"
+    alt="Arrow going back"
+    id="arrow-back"
+  /></a>
+  {{/if}}
+  
+
+</div>
+
